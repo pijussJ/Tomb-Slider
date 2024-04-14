@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        // RIGHT
         if (Input.GetKeyDown(KeyCode.D))
         {
             var targetPos = pos + Vector3Int.right;
@@ -19,8 +20,10 @@ public class Player : MonoBehaviour
 
             pos = targetPos;
             transform.position = map.GetCellCenterWorld(targetPos);
+            transform.eulerAngles = new Vector3(0, 0, 90);
         }
 
+        // LEFT
         if (Input.GetKeyDown(KeyCode.A))
         {
             var targetPos = pos + Vector3Int.left;
@@ -28,8 +31,10 @@ public class Player : MonoBehaviour
 
             pos = targetPos;
             transform.position = map.GetCellCenterWorld(targetPos);
+            transform.eulerAngles = new Vector3(0, 0, 270);
         }
 
+        // UP
         if (Input.GetKeyDown(KeyCode.W))
         {
             var targetPos = pos + Vector3Int.up;
@@ -37,8 +42,10 @@ public class Player : MonoBehaviour
 
             pos = targetPos;
             transform.position = map.GetCellCenterWorld(targetPos);
+            transform.eulerAngles = new Vector3(0, 0, 180);
         }
 
+        // DOWN
         if (Input.GetKeyDown(KeyCode.S))
         {
             var targetPos = pos + Vector3Int.down;
@@ -46,6 +53,7 @@ public class Player : MonoBehaviour
 
             pos = targetPos;
             transform.position = map.GetCellCenterWorld(targetPos);
+            transform.eulerAngles = new Vector3(0, 0, 0);
         }
     }
 }
