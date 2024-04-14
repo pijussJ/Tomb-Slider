@@ -123,15 +123,15 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Coin_Frame_0
     originalName: 
-    pivot: {x: 0.50000006, y: -2.5}
+    pivot: {x: 0.49999997, y: -1}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 2
-      height: 2
+      width: 4
+      height: 4
     spriteID: f0e9b2777317c47d1a4381e76fe315dc
     spriteBone: []
     spriteOutline: []
@@ -143,15 +143,15 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: Coin_Frame_1
     originalName: 
-    pivot: {x: 0.50000006, y: -2.5}
+    pivot: {x: 0.49999997, y: -1}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 14
-      width: 2
-      height: 2
+      y: 16
+      width: 4
+      height: 4
     spriteID: c548647388c1f4de7b12cfee896efc0e
     spriteBone: []
     spriteOutline: []
@@ -160,7 +160,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 14}
+    uvTransform: {x: 4, y: 16}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -173,18 +173,18 @@ ScriptedImporter:
     - name: Coin_Frame_0
       frameIndex: 0
       cellRect:
-        x: 5
-        y: 5
-        width: 2
-        height: 2
+        x: 4
+        y: 4
+        width: 4
+        height: 4
       spriteId: f0e9b2777317c47d1a4381e76fe315dc
     - name: Coin_Frame_1
       frameIndex: 1
       cellRect:
-        x: 5
-        y: 5
-        width: 2
-        height: 2
+        x: 4
+        y: 4
+        width: 4
+        height: 4
       spriteId: c548647388c1f4de7b12cfee896efc0e
     linkedCells: []
     parentIndex: -1
