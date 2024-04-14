@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         pos = map.WorldToCell(transform.position);
+        transform.position = map.GetCellCenterWorld(pos);
     }
 
     void Update()
@@ -54,6 +55,15 @@ public class Player : MonoBehaviour
             pos = targetPos;
             transform.position = map.GetCellCenterWorld(targetPos);
             transform.eulerAngles = new Vector3(0, 0, 0);
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Coin"))
+        {
+            print("money!");
+            Destroy(other.gameObject);
         }
     }
 }
