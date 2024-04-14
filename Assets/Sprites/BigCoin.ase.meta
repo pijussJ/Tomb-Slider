@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c02924d06e86b4a86a28a9c3a86fd654
+guid: e38ccdb4539ca484f8ec72ace844c8e2
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,18 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Coin_Frame_0
+  - name: BigCoin_Frame_0
     originalName: 
-    pivot: {x: 0.49999997, y: -1}
+    pivot: {x: 0.49999997, y: -0.22222224}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 4
-      height: 4
-    spriteID: fb392ec13d96a43ae847756656a7edaf
+      width: 8
+      height: 9
+    spriteID: df05e5a7fc2484856886cd3976df72d8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -141,18 +141,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Coin_Frame_1
+  - name: BigCoin_Frame_1
     originalName: 
-    pivot: {x: 0.49999997, y: -1}
+    pivot: {x: 0.5, y: -0.22222224}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 16
-      width: 4
-      height: 4
-    spriteID: a92435a0a7f694c059d631ad588484dc
+      y: 21
+      width: 6
+      height: 9
+    spriteID: 7517b46b3f8a34e7fb3b20271f8d6084
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -160,32 +160,88 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 16}
+    uvTransform: {x: 4, y: 21}
+  - name: BigCoin_Frame_2
+    originalName: 
+    pivot: {x: 0.49999997, y: -0.22222224}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 20
+      y: 4
+      width: 4
+      height: 9
+    spriteID: ef3ec7cf1aa844100ab6be3641dc64cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 20, y: 4}
+  - name: BigCoin_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: -0.22222224}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 38
+      width: 6
+      height: 9
+    spriteID: 8f14e0f4830184fa5970b59d36193604
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 38}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1609295079
-    name: Coin
+    guid: -1007062637
+    name: BigCoin
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Coin_Frame_0
+    - name: BigCoin_Frame_0
       frameIndex: 0
       cellRect:
-        x: 4
-        y: 4
-        width: 4
-        height: 4
-      spriteId: fb392ec13d96a43ae847756656a7edaf
-    - name: Coin_Frame_1
+        x: 2
+        y: 2
+        width: 8
+        height: 9
+      spriteId: df05e5a7fc2484856886cd3976df72d8
+    - name: BigCoin_Frame_1
       frameIndex: 1
       cellRect:
+        x: 3
+        y: 2
+        width: 6
+        height: 9
+      spriteId: 7517b46b3f8a34e7fb3b20271f8d6084
+    - name: BigCoin_Frame_2
+      frameIndex: 2
+      cellRect:
         x: 4
-        y: 4
+        y: 2
         width: 4
-        height: 4
-      spriteId: a92435a0a7f694c059d631ad588484dc
+        height: 9
+      spriteId: ef3ec7cf1aa844100ab6be3641dc64cb
+    - name: BigCoin_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 3
+        y: 2
+        width: 6
+        height: 9
+      spriteId: 8f14e0f4830184fa5970b59d36193604
     linkedCells: []
     parentIndex: -1
   platformSettings:

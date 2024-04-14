@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c02924d06e86b4a86a28a9c3a86fd654
+guid: 69dad9ce757134a118deee3c9431f98a
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,18 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Coin_Frame_0
+  - name: Player_Frame_0
     originalName: 
-    pivot: {x: 0.49999997, y: -1}
+    pivot: {x: 0.6, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 4
-      height: 4
-    spriteID: fb392ec13d96a43ae847756656a7edaf
+      width: 10
+      height: 12
+    spriteID: 91488083f5b8b47adb86d0ecf2362a4a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -141,18 +141,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Coin_Frame_1
+  - name: Player_Frame_1
     originalName: 
-    pivot: {x: 0.49999997, y: -1}
+    pivot: {x: 0.6, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 16
-      width: 4
-      height: 4
-    spriteID: a92435a0a7f694c059d631ad588484dc
+      y: 24
+      width: 10
+      height: 11
+    spriteID: 919794f3a8041469494349c3ede3789b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -160,32 +160,32 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 16}
+    uvTransform: {x: 4, y: 24}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1609295079
-    name: Coin
+    guid: 1687901567
+    name: Player
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Coin_Frame_0
+    - name: Player_Frame_0
       frameIndex: 0
       cellRect:
-        x: 4
-        y: 4
-        width: 4
-        height: 4
-      spriteId: fb392ec13d96a43ae847756656a7edaf
-    - name: Coin_Frame_1
+        x: 0
+        y: 0
+        width: 10
+        height: 12
+      spriteId: 91488083f5b8b47adb86d0ecf2362a4a
+    - name: Player_Frame_1
       frameIndex: 1
       cellRect:
-        x: 4
-        y: 4
-        width: 4
-        height: 4
-      spriteId: a92435a0a7f694c059d631ad588484dc
+        x: 0
+        y: 0
+        width: 10
+        height: 11
+      spriteId: 919794f3a8041469494349c3ede3789b
     linkedCells: []
     parentIndex: -1
   platformSettings:
