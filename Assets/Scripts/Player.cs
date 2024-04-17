@@ -3,59 +3,28 @@ using UnityEngine.Tilemaps;
 
 public class Player : MonoBehaviour
 {
+    public float speed = 5f;
     public Tilemap map;
     public Vector3Int pos;
+
+    Rigidbody2D rb;
+    Vector2 input;
+
     void Start()
     {
-        pos = map.WorldToCell(transform.position);
-        transform.position = map.GetCellCenterWorld(pos);
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
-        // RIGHT
-        if (Input.GetKeyDown(KeyCode.D))
+        var newInput = new Vector2( Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        if (newInput != Vector2.zero && rb.velocity.magnitude < 0.1f)
         {
-            var targetPos = pos + Vector3Int.right;
-            if (map.HasTile(targetPos)) return;
-
-            pos = targetPos;
-            transform.position = map.GetCellCenterWorld(targetPos);
-            transform.eulerAngles = new Vector3(0, 0, 90);
+            input = newInput;
+            transform.up = -input;
         }
 
-        // LEFT
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            var targetPos = pos + Vector3Int.left;
-            if (map.HasTile(targetPos)) return;
-
-            pos = targetPos;
-            transform.position = map.GetCellCenterWorld(targetPos);
-            transform.eulerAngles = new Vector3(0, 0, 270);
-        }
-
-        // UP
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            var targetPos = pos + Vector3Int.up;
-            if (map.HasTile(targetPos)) return;
-
-            pos = targetPos;
-            transform.position = map.GetCellCenterWorld(targetPos);
-            transform.eulerAngles = new Vector3(0, 0, 180);
-        }
-
-        // DOWN
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            var targetPos = pos + Vector3Int.down;
-            if (map.HasTile(targetPos)) return;
-
-            pos = targetPos;
-            transform.position = map.GetCellCenterWorld(targetPos);
-            transform.eulerAngles = new Vector3(0, 0, 0);
-        }
+        rb.velocity = input * speed;
     }
 
     void OnTriggerEnter2D(Collider2D other)
