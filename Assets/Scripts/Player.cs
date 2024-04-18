@@ -2,11 +2,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public GameObject landParticles;
     public float speed = 5;
     Rigidbody2D rb;
     Vector2 input = Vector2.left;
-    public bool canDash;
-    public LayerMask wallLayer;
+    public bool hasLanded;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -20,7 +21,6 @@ public class Player : MonoBehaviour
             input = newInput;
             transform.up = -input;
         }
-
         rb.velocity = input * speed;
     }
 }
