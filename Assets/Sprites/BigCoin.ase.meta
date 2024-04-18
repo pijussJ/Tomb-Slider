@@ -77,7 +77,6 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
-    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
@@ -90,7 +89,6 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
-    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
@@ -123,8 +121,8 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: BigCoin_Frame_0
     originalName: 
-    pivot: {x: 0.49999997, y: -0.22222224}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -143,8 +141,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: BigCoin_Frame_1
     originalName: 
-    pivot: {x: 0.5, y: -0.22222224}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -163,8 +161,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 21}
   - name: BigCoin_Frame_2
     originalName: 
-    pivot: {x: 0.49999997, y: -0.22222224}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -183,8 +181,8 @@ ScriptedImporter:
     uvTransform: {x: 20, y: 4}
   - name: BigCoin_Frame_3
     originalName: 
-    pivot: {x: 0.5, y: -0.22222224}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -293,7 +291,6 @@ ScriptedImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     androidETC2FallbackOverride: 0
-  generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 12, y: 12}

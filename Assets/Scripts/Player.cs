@@ -8,10 +8,12 @@ public class Player : MonoBehaviour
     Vector2 input = Vector2.right;
     public GameObject landParticles;
     bool hasLanded;
+    public RuleTile coinTile;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        coinTile.m_DefaultSprite = null;
     }
 
     void Update()
@@ -36,5 +38,12 @@ public class Player : MonoBehaviour
 
 
         rb.velocity = input * moveSpeed;
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Coin"))
+        {
+            Destroy(collision.gameObject);
+        }
     }
 }
