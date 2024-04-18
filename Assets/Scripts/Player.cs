@@ -6,6 +6,8 @@ public class Player : MonoBehaviour
     public LayerMask wallLayer;
     Rigidbody2D rb;
     Vector2 input = Vector2.right;
+    public GameObject landParticles;
+    bool hasLanded;
 
     void Start()
     {
@@ -17,11 +19,21 @@ public class Player : MonoBehaviour
         var newInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
         var hit = Physics2D.Raycast(transform.position, input, 1f, wallLayer);
-        if (newInput != Vector2.zero && hit.collider != null)
+        if (newInput != Vector2.zero && hit.collider != null && newInput != input)
         {
             input = newInput;
-            transform.right = input;
+            transform.up = -input;
+            hasLanded = false;
         }
+
+        // land particles
+        if (rb.velocity.magnitude < 0.1f && !hasLanded)
+        {
+            hasLanded = true;
+            var obj = Instantiate( landParticles, transform.position, Quaternion.identity);
+            obj.transform.up = transform.up;
+        }
+
 
         rb.velocity = input * moveSpeed;
     }

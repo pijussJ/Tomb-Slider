@@ -14,11 +14,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 69dad9ce757134a118deee3c9431f98a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4
+      value: -3.892
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 69dad9ce757134a118deee3c9431f98a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.482
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 69dad9ce757134a118deee3c9431f98a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -130,7 +130,7 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.041666657, y: 0.45833334}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.45833334
 --- !u!114 &2778168918764656345
@@ -149,3 +149,4 @@ MonoBehaviour:
   wallLayer:
     serializedVersion: 2
     m_Bits: 8
+  landParticles: {fileID: 7173660767994505998, guid: 906a7b4965c024a699a3f8d8afe520ea, type: 3}
