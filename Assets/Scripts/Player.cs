@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class Player : MonoBehaviour
 {
@@ -8,10 +9,21 @@ public class Player : MonoBehaviour
     Vector2 input = Vector2.right;
     public GameObject landParticles;
     bool hasLanded;
+    public RuleTile coinTile;
+    public Tilemap tilemap;
 
+    Sprite coinSprite;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        coinSprite = coinTile.m_DefaultSprite;
+        coinTile.m_DefaultSprite = null;
+        tilemap.RefreshAllTiles();
+    }
+
+    void OnDestroy()
+    {
+        coinTile.m_DefaultSprite = coinSprite;
     }
 
     void Update()
@@ -34,7 +46,14 @@ public class Player : MonoBehaviour
             obj.transform.up = transform.up;
         }
 
-
         rb.velocity = input * moveSpeed;
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Coin"))
+        {
+            Destroy(other.gameObject);
+        }
     }
 }
